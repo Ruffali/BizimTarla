@@ -1,0 +1,241 @@
+#aboutMarks{
+    margin: 5% 0;
+    position: relative;
+    .container{
+        .row{
+            .myButtons{
+                ul{
+                    text-align: center;
+                    li{
+                        display: inline-block;
+                        padding: 1% 2%;
+                        transition: all linear 0.1s;
+                        margin: 0 2%;
+                        a{
+                            color: $wordColorLightGrey;
+                            font-size: 15.584px;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 600;
+                            transition: all linear 0.1s;
+                        }
+                        &:hover{
+                            background: white;
+                            border-radius: 5px;
+                            box-shadow: 0px 13px 22px 1px #c2c2c25e;
+                            a{
+                                color: rgb(117, 113, 113);
+                            }
+                        }
+                    }
+                }
+            }
+            .letter{
+                color: $wordColorLightGrey;
+                background: white;
+                padding: 5%;
+                margin-top: 10%;
+                .image{
+                    height: 200px;
+                    width: 30%;
+                    margin-bottom: 8%;
+                    margin-top: -10%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border: 4px solid white;
+                        border-radius: 5px;
+                        box-shadow: 16px 22px 22px 1px #c2c2c25e;
+                    }
+                }
+                h1{
+                    font-size: 24px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 600;
+                    color: $wordColorGrey;
+                }
+                p{
+                    font-size: 15.584px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+                }
+                .leaf{
+                    position: absolute;
+                    width: 10%;
+                    top: 1%;
+                    right: -0.5%;
+                    transform: rotate(-100deg);
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .rightUpPicture, .leftDownPicture{
+        position: absolute;
+        width: 27%;
+        opacity: 0.2;
+        z-index: -1;
+        top: -10%;
+        left: 70%;
+        height: 418px;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .leftDownPicture{
+        left: -10%;
+        height: 500px;
+        top: 20%;
+        img{
+
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    #aboutMarks{
+        .container{
+            .row{
+                .myButtons{
+                    ul{
+                        li{
+                            a{
+                            }
+                            &:hover{
+                                a{
+                                }
+                            }
+                        }
+                    }
+                }
+                .letter{
+                    .image{
+                        width: 75%;
+                    }
+                    .leaf{
+                        right: 1.5%;
+                        width: 22%;
+                        img{
+                        }
+                    }
+                }
+            }
+        }
+        .rightUpPicture, .leftDownPicture{
+            display: none;
+        }
+        .leftDownPicture{
+        }
+    }
+}
+@media  screen and (min-width: 600px) and (max-width: 991px){
+    #aboutMarks{
+        .rightUpPicture, .leftDownPicture{
+            display: block;
+        }
+        .rightUpPicture{
+            left: 80%;
+        }
+    }
+}
+@media  screen and (min-width: 400px) and (max-width: 991px){
+    #aboutMarks{
+        .container{
+            .row{
+                .letter{
+                    .image{
+                        width: 70%;
+                    }
+                    .leaf{
+                        width: 17%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 500px) and (max-width: 991px){
+    #aboutMarks{
+        .container{
+            .row{
+                .letter{
+                    .image{
+                        width: 60%;
+                    }
+                    .leaf{
+                        width: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 768px) and (max-width: 991px){
+    #aboutMarks{
+        .container{
+            .row{
+                .letter{
+                    .image{
+                        width: 42%;
+                    }
+                    .leaf{
+                        width: 9%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 1200px){
+    #aboutMarks{
+        .container{
+            .row{
+                .letter{
+                    h1{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}   
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    #aboutMarks{
+        .container{
+            .row{
+                .myButtons{
+                    ul{
+                        li{
+                            padding-top: 0%;
+                            a{
+                                font-size: 10.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 600px) and (max-width: 991px){
+    #aboutMarks{
+        .container{
+            .row{
+                .myButtons{
+                    ul{
+                        li{
+                            a{
+                                font-size: 12.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

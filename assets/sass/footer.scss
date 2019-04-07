@@ -1,0 +1,174 @@
+#footer{
+    background-color: #D5E0E5;
+    padding: 1% 0;
+    .container{
+        .row{
+            .col-md-12{
+                nav{
+                    a.myNavbarBrand{
+                        width: 13%;
+                        img{
+                            width: 100%;
+                            filter: drop-shadow(3px 4px 2px #e1e1e1);
+                        }
+                    }
+                    .myNavbarCollapse{
+                        width: 100%;
+                        text-align: right;
+                        ul.myNavbarNav{
+                            li.myNavItem{
+                                display: inline-block;
+                                margin-right: 3%;
+                                &:last-child{
+                                    margin-right: 0;
+                                }
+                                a.myNavLink{
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    font-weight: 600;
+                                    color:$wordColorBlack;
+                                    font-size: 13px;
+                                }
+                                &:hover{
+                                    a.myNavLink{
+                                        color: $wordColorRed;
+                                    }
+                                }
+                                &.active{
+                                    a.myNavLink{
+                                        color: $wordColorRed;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+
+    }
+}
+.lastPart{
+    background-color: white;
+    height: 55px;
+    line-height: 55px;
+    .container{
+        .row{
+            .col-md-6{
+                .copyright{
+                    p.copy{
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 400;
+                        color: $wordColorBlack;
+                        font-size: 12px;
+                        display: inline;
+                    }
+                }
+                .icons{
+                        ul{
+                        text-align: right;
+                        margin-bottom: 0;
+                        li{
+                            list-style: none;
+                            display: inline-block;
+                            margin-right: 3%;
+                            background-color: #8b8b8b;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                            margin: 0;
+                            height: 26px;
+                            line-height: 24px;
+                            width: 28px;
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                font-size: 14px;
+                            }
+                        }
+                    } 
+                }
+               
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #footer{
+        margin-top: 5%;
+        .container{
+            .row{
+                .col-md-12{
+                    .navbar{
+                        padding: 0;
+                        padding-top: 5%;
+                        a.myNavbarBrand{
+                            width: 40%;
+                            margin: 0 auto;
+                        }
+                        .myNavbarCollapse{
+                            width: 100%;
+                            text-align: left;
+                            ul.myNavbarNav{
+                                width: 100%;
+                                text-align: center;
+                                li.myNavItem{
+                                    display: inline-block;
+                                    a.myNavLink{
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+    
+        }
+    }
+    .lastPart{
+        .container{
+            .row{
+                .col-md-6{
+                    .copyright{
+                        text-align: center;
+                    }
+                    .icons{
+                            ul{
+                                text-align: center;
+                        } 
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 767px) and (max-width: 991px){
+    #footer{
+        .container{
+            .row{
+                .col-md-12{
+                    .navbar{
+                        .myNavbarCollapse{
+                            width: 83%;
+                            margin-top: 2%;
+                        }
+                    }
+                }
+            }
+            
+    
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    .lastPart{
+        height: auto;
+    }
+}

@@ -1,0 +1,63 @@
+#imageMain .container-fluid .row .imageColMd12 {
+  padding: 0; }
+  #imageMain .container-fluid .row .imageColMd12 .imageTop {
+    position: relative; }
+    #imageMain .container-fluid .row .imageColMd12 .imageTop::before {
+      position: absolute;
+      content: "";
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.192); }
+    #imageMain .container-fluid .row .imageColMd12 .imageTop .images {
+      width: 100%;
+      height: 550px; }
+    #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage {
+      position: absolute;
+      bottom: -9%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+      z-index: 10;
+      width: 100%; }
+      #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage h1 {
+        font-weight: 600;
+        font-size: 51.4px;
+        color: white; }
+      #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage p {
+        font-size: 18px;
+        color: white; }
+      #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage ul {
+        margin-top: 5%; }
+        #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage ul li {
+          display: inline; }
+
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .images {
+    height: 274px; }
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage {
+    bottom: -27%; }
+    #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage h1 {
+      font-size: 27.4px; }
+    #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage p {
+      font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage {
+    bottom: -45%; } }
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .images {
+    height: 306px; }
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage h1 {
+    font-size: 37.4px; }
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage p {
+    font-size: 15px; } }
+@media screen and (min-width: 900px) and (max-width: 991px) {
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .images {
+    height: 306px; }
+  #imageMain .container-fluid .row .imageColMd12 .imageTop .overImage h1 {
+    font-size: 45.4px; } }
+
+/*# sourceMappingURL=imageMain.css.map */

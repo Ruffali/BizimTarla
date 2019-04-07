@@ -1,0 +1,194 @@
+#imageProduct{
+    position: relative;
+    margin-bottom: 5%;
+    .container{
+        .row{
+            .imageColMd12{
+                .header{
+                margin: 5% 0;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 600;
+                text-align: center;
+                color: $wordColorBlack;
+                    h1{
+                        font-size: 29.2px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 17.571px;
+                    }
+                }
+                .images{
+                    position: relative;
+                    .resipeImage{
+                        width: 23.2%;
+                        margin: 0 1%;
+                        display: inline-block;
+                        position: relative;
+                        height: 330px;
+                        margin-bottom: 4%;
+                        overflow: hidden;
+                        transition: all linear 0.2s;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        .content{
+                            position: absolute;
+                            bottom: 0%;
+                            left: 0%;
+                            z-index: 10;
+                            width: 100%;
+                            background-color: white;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 600;
+                            padding: 3% 1% 3% 5%;
+                            transition: all linear 0.4s;
+                            p{
+                                font-size: 17.315px;
+                            }
+                            p:first-child{
+                                font-family: 'Source Sans Pro', sans-serif;
+                                font-weight: 400;
+                                color: $wordColorGrey;
+                            }
+                            p:last-child{
+                                color: $wordColorRed;
+                            }
+                            h1{
+                                font-size: 20.778px;
+                                color: $wordColorBlack;
+                                font-weight: 600;
+                            }
+                        }
+                        &:hover{
+                            .content{
+                            background-color: rgba(255, 255, 255, 0.63);
+                            padding-top: 200%;
+                            }
+                            box-shadow: 21px 6px 19px 9px #c2c2c25e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .leftUpPicture, .rightDownPicture{
+        position: absolute;
+        top: 50%;
+        left: -6%;
+        width: 27%;
+        height: 418px;
+        opacity: 0.2;
+        z-index: -1;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .rightDownPicture{
+        opacity: 1;
+        top: 69%;
+        left: 85%;
+        height: 240px;
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    #imageProduct{
+        .container{
+            .row{
+                .imageColMd12{
+                    .header{
+                        h1{
+                            font-size: 21.2px;
+                        }
+                        p{
+                            font-size: 12.571px;
+                        }
+                    }
+                    .images{
+                        .resipeImage{
+                            height: 280px;
+                            .content{
+                                padding: 2% 1% 0% 5%;
+                                p{
+                                    font-size: 14.315px;
+                                }
+                                h1{
+                                    font-size: 17.778px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 599px){
+    #imageProduct{
+        .container{
+            .row{
+                .imageColMd12{
+                    .images{
+                        .resipeImage{
+                            width: 100%;
+                            margin: 0;
+                            margin-top: 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 600px) and (max-width: 1000px){
+    #imageProduct{
+        .container{
+            .row{
+                .imageColMd12{
+                    .images{
+                        .resipeImage{
+                            margin-top: 5%;
+                            width: 48%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 1000px) and (max-width: 1200px){
+    #imageProduct{
+        .container{
+            .row{
+                .imageColMd12{
+                    .images{
+                        .resipeImage{
+                          width: 23.1%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 400px) and (max-width: 991px){
+    #imageProduct{
+        .container{
+            .row{
+                .imageColMd12{
+                    .images{
+                        .resipeImage{
+                            height: 330px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

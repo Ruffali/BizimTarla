@@ -1,0 +1,253 @@
+#carouselProduct{
+    .container{
+        .row{
+            .carouselColMd12{
+                .header{
+                margin: 5% 0;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 600;
+                text-align: center;
+                color: $wordColorBlack;
+                    h1{
+                        font-size: 29.2px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 17.571px;
+                    }
+                }
+                .carousel{
+                    position: relative;
+                    .item{
+                        width: 100%;
+                        position: relative;
+                        height: 330px;
+                        margin-bottom: 10%;
+                        overflow: hidden;
+                        transition: all linear 0.2s;
+                        .content{
+                            position: absolute;
+                            bottom: 0%;
+                            left: 0%;
+                            // transform: translate(-50%, 0%);
+                            z-index: 10;
+                            width: 100%;
+                            background-color: white;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 600;
+                            padding: 3% 1% 3% 5%;
+                            transition: all linear 0.5s;
+                            p{
+                                font-size: 17.315px;
+                            }
+                            p:first-child{
+                                font-weight: 400;
+                                color: $wordColorGrey;
+                            }
+                            p:last-child{
+                                font-weight: 600;
+                                color: $wordColorRed;
+                            }
+                            h1{
+                                font-weight: 600;
+                                font-size: 20.778px;
+                                color: $wordColorBlack;
+                            }
+                        }
+                        &:hover{
+                            .content{
+                            background-color: rgba(255, 255, 255, 0.63);
+                            padding-top: 200%;
+                            }
+                            box-shadow: 21px 6px 19px 9px #c2c2c25e;
+                        }
+                    }
+                    .owl-dots{
+                        position: absolute;
+                        bottom: 0%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 10;
+                        width: 100%;
+                        .owl-dot{
+                            span{
+                                background-color: white;
+                            }
+                            &.active{
+                                span{
+                                    background-color: black;
+                                    border: 1px solid white;
+                                }
+                            }
+                        }
+                    }
+                    .owl-dots{
+                        display: block;
+                        position: absolute;
+                        bottom: -11%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 10;
+                        width: 100%;
+                        .owl-dot{
+                            span{
+                                background-color: $wordColorBlack;
+                            }
+                            &.active{
+                                span{
+                                    background-color: transparent;
+                                    border: 1px solid $wordColorBlack;
+                                }
+                            }
+                        }
+                    }
+                    .owl-prev, .owl-next{
+                        position: absolute;
+                        bottom: 40%;
+                        transform: translate(-50%, -50%);
+                        z-index: 10;
+                        color: $wordColorRed;
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                    .owl-prev{
+                        left: -5%;
+                    }
+                    .owl-next{
+                        right: -6%;
+                    }
+                }
+            }
+        }
+    }
+    .recipeCarousel{
+        margin-bottom: 7%;
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #carouselProduct{
+        margin-top: 15px;
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 3100px){
+    .carousel{
+        .owl-carousel{
+            .owl-nav{
+                display: none;
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 900px){
+    #carouselPngProduct{
+        .container-fluid {
+            .row{
+                .carouselColMd12{
+                    .carousel{
+                        .customPrevBtn, .customNextBtn{
+                            bottom: 37%!important;
+                        }
+                    } 
+                } 
+            }
+        }
+    } 
+}
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    #carouselProduct{
+        .container{
+            .row{
+                .carouselColMd12{
+                    .header{
+                        h1{
+                            font-size: 21.2px;
+                        }
+                        p{
+                            font-size: 12.571px;
+                        }
+                    }
+                    .carousel{
+                        .item{
+                            height: 280px;
+                            .content{
+                                padding: 2% 1% 0% 5%;
+                                p{
+                                    font-size: 14.315px;
+                                }
+                                h1{
+                                    font-size: 17.778px;
+                                }
+                            }
+                        }
+                        .owl-prev{
+                            left: 3%;
+                        }
+                        .owl-next{
+                            right: -1%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 400px) and (max-width: 991px){
+    #carouselProduct{
+        .container{
+            .row{
+                .carouselColMd12{
+                    .carousel{
+                        .item{
+                            height: 330px;
+                        }
+                        .owl-dots{
+                            bottom: -5%;
+                        }
+                        .owl-prev{
+                            left: -2;
+                        }
+                        .owl-next{
+                            right: -1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 600px) and (max-width: 991px){
+    #carouselProduct{
+        .container{
+            .row{
+                .carouselColMd12{
+                    .carousel{
+                        .owl-prev{
+                            left: -4%;
+                        }
+                        .owl-next{
+                            right: -7%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 992px) and (max-width: 1300px){
+    #carouselProduct{
+        .container{
+            .row{
+                .carouselColMd12{
+                    .carousel{
+                        .owl-prev{
+                            left: -1%;
+                        }
+                        .owl-next{
+                            right: -3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

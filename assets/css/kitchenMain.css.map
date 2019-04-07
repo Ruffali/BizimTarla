@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIgB,8CAAO;EACH,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,kDAAG;IACC,MAAM,EAAE,IAAI;IACZ,KAAK,EAAE,IAAI;AAKnB,yCAAE;EACE,SAAS,EAAE,QAAQ;EACnB,KAAK,EAAE,OAAe",
+"sources": ["../sass/kitchenMain.scss"],
+"names": [],
+"file": "kitchenMain.css"
+}

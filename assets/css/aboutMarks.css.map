@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIgB,yCAAE;EACE,MAAM,EAAE,MAAM;EACd,4CAAE;IACE,OAAO,EAAE,YAAY;IAErB,UAAU,EAAE,KAAK;IACjB,8CAAC;MACD,KAAK,EAAE,OAAkB",
+"sources": ["../sass/aboutMarks.scss"],
+"names": [],
+"file": "aboutMarks.css"
+}

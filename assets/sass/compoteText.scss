@@ -1,0 +1,39 @@
+#compoteText{
+    margin: 3% 0;
+    margin-bottom: 5%;
+    .container{
+        .row{
+            .myContent{
+                color: $wordColorLightGrey;
+                h1{
+                font-size: 24px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 600;
+                color: $wordColorGrey;
+                margin-bottom: 3%;
+                }
+                p{
+                    font-size: 15.584px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+                }
+            } 
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 1200px){
+    #compoteText{
+        .container{
+            .row{
+                .myContent{
+                    h1{
+                    font-size: 20px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                } 
+            }
+        }
+    }
+}

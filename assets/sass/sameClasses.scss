@@ -1,0 +1,92 @@
+.buttonWhite{
+    position: relative;
+    display: inline-block;
+    font-size: 17.5px;
+    width: 240px;
+    height: 57px;
+    line-height: 57px;
+    border-radius: 5px;
+    background-color: white;
+    color: $wordColorRed;
+    margin: 0 0.5%;
+    text-transform: uppercase;
+    transition: all linear 0.1s;
+    border: none;
+    overflow: hidden;
+    box-shadow: none;
+    outline: none;
+    font-weight: 600;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: $wordColorRed;
+        color: white;
+    }
+}
+.mydropdownBtton {
+    &::after{
+        display: none;
+    }
+}
+.buttonLi{
+    position: relative;
+    .dropdown-menu{
+        width: 93%;
+    }
+}
+.dropdown-menu.show{
+    margin-top: -1px;
+}
+.dropdown-item{
+    width: 80%;
+}
+.objectFitFill{
+    object-fit: cover;
+    height: 100%;
+    width:100%
+}
+.wrapper{
+    overflow-x: hidden;
+}
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    li.buttonLi{
+        display: block!important;
+        margin-top: 10px;
+    }
+    .buttonWhite{
+        font-size: 10.5px;
+        width: 125px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .buttonClick{
+        width: 80%!important;
+        a{
+            font-size: 10px;
+        }
+    }
+}
+@media  screen and (min-width: 500px) and (max-width: 991px){
+    li.buttonLi{
+        display: inline-block!important;
+        margin-top: 0px;
+    }
+    .buttonWhite{
+        font-size: 10.5px;
+        width: 125px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .buttonClick{
+        width: 80%!important;
+        a{
+            font-size: 10px;
+        }
+    }
+}
+@media  screen and (min-width: 600px) and (max-width: 991px){
+    .buttonWhite{
+        font-size: 12.5px;
+    }
+}

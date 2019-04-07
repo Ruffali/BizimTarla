@@ -1,0 +1,225 @@
+#onlyProduct{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -11%;
+    z-index: 1;
+    .container{
+        .productRow{
+            padding: 5% 0%;
+            .col-md-8{
+                    .content{
+                    h1.header{
+                        font-size: 25px;
+                        color: #566A40;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        margin-bottom: 3%;
+                        span{
+                            font-size: 22px;
+                            color: #C19D45;
+                        }
+                    }
+                    .inside{
+                        h1{
+                            font-size: 18px;
+                            color: $wordColorBlack;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 15px;
+                            color: $wordColorGrey;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 400;
+                        }
+                    }
+                    .nutrition{
+                        margin-top: 5%;
+                        font-size: 22px;
+                        color: $wordColorBlack;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                    }
+                    .nutImage{
+                        cursor: pointer;
+                        width: 10%;
+                        img{
+                            width: 100%;
+                        } 
+                    }
+                }
+            }
+            .topCol{
+                display: none;
+            }
+            .col-md-3{
+                    .item{
+                    img{
+                        height: auto;
+                        filter: drop-shadow(-20px 7px 18px grey);
+                    }
+                }
+            }
+        }
+    }
+    .leafTop, .leafBottom{
+        position: absolute;
+        width: 10%;
+        top: 1%;
+        right: -0.5%;
+        transform: rotate(-100deg);
+        img{
+            width: 100%;
+        }
+    }
+    .leafBottom{
+        transform: rotate(0deg);
+        top: 80%;
+        img{
+
+        }
+    }
+    
+}
+
+#lightboxOverlay{
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#lightboxOverlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    #onlyProduct{
+        .container{
+            .productRow{
+                .topCol{
+                    display: block;
+                }
+                .bottomCol{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 768px) and (max-width: 3100px){
+    #onlyProduct{
+        .container{
+            .productRow{
+                .topCol{
+                    display: none;
+                }
+                .bottomCol{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    #onlyProduct{
+        .container{
+            .productRow{
+                .col-md-8{
+                        .content{
+                        h1.header{
+                            font-size: 20px;
+                            span{
+                                font-size: 18px;
+                            }
+                        }
+                        .inside{
+                            h1{
+                                font-size: 15px;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                        .nutrition{
+                            font-size: 18px;
+                        }
+                        .nutImage{
+                            width: 32%;
+                        }
+                    }
+                }
+                .col-md-3{
+                        .item{
+                            text-align: center;
+                        img{
+                            width: 67%;
+                        }
+                    }
+                }
+            }
+        }
+        .leafTop, .leafBottom{
+            width: 26%;
+        }
+        .leafBottom{
+            top: 89%;
+        }
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 991px){
+    #onlyProduct{
+        .container{
+            .productRow{
+                .col-md-3{
+                        .item{
+                        img{
+                            width: 170%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 768px) and (max-width: 991px){
+    #onlyProduct{
+        .container{
+            .productRow{
+                .col-md-3{
+                        .item{
+                        img{
+                            width: 170%;
+                        }
+                    }
+                }
+            }
+        }
+        .leafTop, .leafBottom{
+            width: 11%;;
+        }
+    }
+}
+@media  screen and (min-width: 1800px) and (max-width: 3100px){
+    #onlyProduct{
+        margin-bottom: -9%;
+    }
+}
+@media  screen and (min-width: 2100px) and (max-width: 3100px){
+    #onlyProduct{
+        margin-bottom: -5%;
+    }
+}
+@media  screen and (min-width: 2700px) and (max-width: 3100px){
+    #onlyProduct{
+        margin-bottom: -2%;
+    }
+}

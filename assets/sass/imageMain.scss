@@ -1,0 +1,133 @@
+#imageMain{
+    .container-fluid{
+        .row{
+            .imageColMd12{
+                padding: 0;
+                .imageTop{
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        top: 0%;
+                        left: 0%;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.192);
+                    }
+                    .images{
+                        width: 100%;
+                        height: 550px;
+                    }
+                    .overImage{
+                        position: absolute;
+                        bottom: -9%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        z-index: 10;
+                        width: 100%;
+                        h1{
+                            font-weight: 600;
+                            font-size: 51.4px;
+                            color: white;
+                        }
+                        p{
+                            font-size: 18px;
+                            color: white;
+                        }
+                        ul{
+                            margin-top: 5%;
+                            li{
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 991px){
+    #imageMain{
+        .container-fluid{
+            .row{
+                .imageColMd12{
+                    .imageTop{
+                        .images{
+                            height: 274px;
+                        }
+                        .overImage{
+                            bottom: -27%;
+                            h1{
+                                font-size: 27.4px;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 320px) and (max-width: 499px){
+    #imageMain{
+        .container-fluid{
+            .row{
+                .imageColMd12{
+                    .imageTop{
+                        .overImage{
+                            bottom: -45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 600px) and (max-width: 991px){
+    #imageMain{
+        .container-fluid{
+            .row{
+                .imageColMd12{
+                    .imageTop{
+                        .images{
+                            height: 306px;
+                        }
+                        .overImage{
+                            h1{
+                                font-size: 37.4px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (min-width: 900px) and (max-width: 991px){
+    #imageMain{
+        .container-fluid{
+            .row{
+                .imageColMd12{
+                    .imageTop{
+                        .images{
+                            height: 306px;
+                        }
+                        .overImage{
+                            h1{
+                                font-size: 45.4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+#carouselMain .container-fluid .row .carouselColMd12 {
+  padding: 0; }
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel {
+    position: relative; }
+    #carouselMain .container-fluid .row .carouselColMd12 .carousel .item {
+      width: 100%;
+      height: 690px;
+      position: relative; }
+      #carouselMain .container-fluid .row .carouselColMd12 .carousel .item::before {
+        position: absolute;
+        content: "";
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.192);
+        z-index: 555; }
+    #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel {
+      position: absolute;
+      bottom: -9%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+      z-index: 10;
+      width: 100%; }
+      #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel h1 {
+        font-size: 51.4px;
+        color: white; }
+      #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel p {
+        font-size: 18px;
+        color: white; }
+      #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel ul {
+        margin-top: 5%; }
+        #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel ul li {
+          display: inline; }
+    #carouselMain .container-fluid .row .carouselColMd12 .carousel .owl-dots {
+      display: block;
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 100%; }
+      #carouselMain .container-fluid .row .carouselColMd12 .carousel .owl-dots .owl-dot span {
+        background-color: white; }
+      #carouselMain .container-fluid .row .carouselColMd12 .carousel .owl-dots .owl-dot.active span {
+        background-color: black;
+        border: 1px solid white; }
+    #carouselMain .container-fluid .row .carouselColMd12 .carousel .owl-nav {
+      display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .item {
+    height: 420px; }
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel {
+    bottom: -23% !important; }
+    #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel h1 {
+      font-size: 27.4px; }
+    #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel p {
+      font-size: 12px; } }
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .item {
+    height: 470px; }
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel h1 {
+    font-size: 37.4px; }
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel p {
+    font-size: 15px; } }
+@media screen and (min-width: 900px) and (max-width: 991px) {
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .item {
+    height: 470px; }
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel h1 {
+    font-size: 45.4px; } }
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  .buttonLi .dropdown-menu {
+    width: 30% !important; }
+    .buttonLi .dropdown-menu .dropdown-item {
+      font-size: 10px; } }
+@media screen and (min-width: 500px) and (max-width: 991px) {
+  #carouselMain .container-fluid .row .carouselColMd12 .carousel .overCarousel {
+    bottom: -11% !important; } }
+
+/*# sourceMappingURL=carouselMain.css.map */
